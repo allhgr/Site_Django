@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        /* Estilos aplicáveis a todas as páginas */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #003d66;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        section {
+            margin: 2rem 0;
+        }
+
+        footer {
+            background: #003d66;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Curso Técnico em Desenvolvimento de Sistemas</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'sobre' %}">Sobre</a></li>
+                    <li><a href="{% url 'curiosidades' %}">Curiosidades</a></li>
+                    <li><a href="{% url 'contato' %}">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="container">
+        <h2>Contato</h2>
+        <p>Para mais informações, entre em contato conosco através dos seguintes meios:</p>
+        <ul>
+            <li><strong>Endereço:</strong> Rua das Flores, 1033, Aparecida de Goiânia, GO, 74960-000</li>
+            <li><strong>Telefone:</strong> (62) 1234-5678</li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/556212345678" target="_blank">(62) 91234-5678</a></li>
+            <li><strong>E-mail:</strong> <a href="mailto:desenvolvsist@contatosenai.com">desenvolvsist@contatosenai.com</a></li>
+            <li><strong>Horário de Funcionamento:</strong> Segunda a Sexta-feira, das 08:00 às 18:00</li>
+        </ul>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Curso Técnico em Desenvolvimento de Sistemas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

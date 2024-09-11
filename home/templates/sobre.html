@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Curso</title>
+    <style>
+        /* Estilos aplicáveis a todas as páginas */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #003d66;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        section {
+            margin: 2rem 0;
+        }
+
+        footer {
+            background: #003d66;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Curso Técnico em Desenvolvimento de Sistemas</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'sobre' %}">Sobre</a></li>
+                    <li><a href="{% url 'curiosidades' %}">Curiosidades</a></li>
+                    <li><a href="{% url 'contato' %}">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="container">
+        <h2>Sobre o Curso</h2>
+        <p>O Curso Técnico em Desenvolvimento de Sistemas oferece uma formação completa para profissionais que desejam atuar na criação, desenvolvimento e manutenção de sistemas e aplicações. Ideal para quem tem interesse em tecnologia e deseja adquirir habilidades práticas e teóricas.</p>
+
+        <h3>Objetivos do Curso</h3>
+        <ul>
+            <li>Desenvolver habilidades em programação de software e desenvolvimento web.</li>
+            <li>Capacitar para trabalhar com bancos de dados e sistemas de gerenciamento.</li>
+            <li>Preparar para a análise e solução de problemas técnicos e de sistema.</li>
+            <li>Ensinar técnicas de gestão de projetos e trabalho em equipe.</li>
+        </ul>
+
+        <h3>Áreas de Atuação</h3>
+        <p>Após a conclusão do curso, os profissionais estarão aptos a trabalhar em diversas áreas, tais como:</p>
+        <ul>
+            <li>Desenvolvimento de Software</li>
+            <li>Desenvolvimento Web</li>
+            <li>Administração de Banco de Dados</li>
+            <li>Suporte Técnico e Manutenção de Sistemas</li>
+        </ul>
+
+        <h3>Conteúdo Programático</h3>
+        <p>O curso abrange uma ampla gama de tópicos, incluindo:</p>
+        <ul>
+            <li>Introdução à Programação</li>
+            <li>Desenvolvimento Front-end e Back-end</li>
+            <li>Design e Usabilidade</li>
+            <li>Gerenciamento de Projetos de TI</li>
+            <li>Segurança da Informação</li>
+        </ul>
+
+        <h3>Benefícios do Curso</h3>
+        <p>Os alunos terão acesso a:</p>
+        <ul>
+            <li>Laboratórios equipados com tecnologia de ponta.</li>
+            <li>Estágios em empresas parceiras.</li>
+            <li>Certificação reconhecida no mercado.</li>
+            <li>Networking com profissionais da área.</li>
+        </ul>
+    </section>
+</body>
+</html>

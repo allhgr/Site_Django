@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades</title>
+    <style>
+        /* Estilos aplicáveis a todas as páginas */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #003d66;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        section {
+            margin: 2rem 0;
+        }
+
+        footer {
+            background: #003d66;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Curso Técnico em Desenvolvimento de Sistemas</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'sobre' %}">Sobre</a></li>
+                    <li><a href="{% url 'curiosidades' %}">Curiosidades</a></li>
+                    <li><a href="{% url 'contato' %}">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="container">
+        <h2>Curiosidades</h2>
+        <ul>
+            <li><strong>Alta Demanda:</strong> Profissionais formados nesse curso estão entre os mais requisitados no mercado de trabalho devido à crescente dependência de tecnologia.</li>
+            <li><strong>Versatilidade:</strong> O curso abrange várias áreas, incluindo desenvolvimento web, programação, banco de dados e muito mais.</li>
+            <li><strong>Projeto Final:</strong> Muitos cursos incluem um projeto final onde os alunos desenvolvem um sistema completo, aplicando o conhecimento adquirido ao longo do curso.</li>
+            <li><strong>Certificação:</strong> Após a conclusão, os alunos recebem um diploma que pode abrir portas para oportunidades em diversas empresas e setores.</li>
+            <li><strong>Aprendizado Prático:</strong> Além da teoria, o curso proporciona experiências práticas com ferramentas e tecnologias atuais, preparando o aluno para desafios reais do mercado.</li>
+            <li><strong>Networking:</strong> Os alunos têm a oportunidade de participar de eventos e workshops, o que facilita o networking e a construção de contatos profissionais importantes.</li>
+            <li><strong>Estágios:</strong> Muitos programas incluem estágios obrigatórios, oferecendo experiência prática em empresas reais, o que é altamente valorizado pelos empregadores.</li>
+            <li><strong>Alunos de Sucesso:</strong> Ex-alunos do curso frequentemente destacam-se em suas carreiras, contribuindo para a reputação positiva do programa.</li>
+        </ul>
+    </section>
+</body>
+</html>
